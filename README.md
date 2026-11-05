@@ -12,11 +12,21 @@ The program prints Result: followed by the answer.
 ## prerequisits
 python3 
 
-./run.sh to run the calculator
+##What to run and expect
+Run:
+./run.sh   --> run the calculator
+./check.sh --> test the outputs of the calculator (expect 5 passed tests)
+echo $?    --> check the exit status
+0 = Success
+1= Something failed
+5 = No test collected
+
 Example test:
 6 * 7
 expected result:
 42.0
 enter Ctrl C to exit the running calculator 
 
-Run: python3 calculator.py
+Activate SCCM4910 environment:
+source /opt/python-venv/sccm-4910/bin/activate
+python3 -m pytest --version (Expect a version to be displayed)

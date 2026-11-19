@@ -12,7 +12,7 @@ The program prints Result: followed by the answer.
 ## prerequisits
 python3 
 
-##What to run and expect
+## What to run and expect
 Run:
 ./run.sh   --> run the calculator
 ./check.sh --> test the outputs of the calculator (expect 5 passed tests)

@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, CircleArea
 import pytest
 
 def test_add():
@@ -12,6 +12,9 @@ def test_subtract():
 
 def test_multiply():
     assert multiply(2, 5) == 10
+
+def test_circleArea():
+    assert CircleArea(-4) == "Error"
 
 def test_divide_uneven():
     #arrange
